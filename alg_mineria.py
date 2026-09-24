@@ -1,14 +1,23 @@
 import hashlib
 import time
 
+# Definir clase 
+
+
+
+def minar_bloque_2(encabezado, target, nonce_max):
+    bloque_hash = hashlib.sha256(hashlib.sha256(encabezado))
+
+    if bloque_hash < target:
+        return encabezado, bloque_hash
+
+    if nonce > nonce_max:
+        encabezado
+
+    
+
 def minarbloque(transacciones, hash_bloque_anterior, target):
 
-    encabezado = {
-        "transacciones": transacciones,
-        "hash_anterior": hash_bloque_anterior,
-        "timestamp": time.time(),
-        "nonce": 0
-    }
 
     while True:
         hash_resultado = hashlib.sha256(hashlib.sha256(encabezado))
