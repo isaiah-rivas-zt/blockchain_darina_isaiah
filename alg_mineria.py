@@ -54,6 +54,5 @@ if __name__ == "__main__":
     fin = time.time()
 
     print("\n=== RESUMEN ===")
-    print("Hash \t  {hash_final}  \n")
-    print("Nonce  \t {bloque_ejemplo.nonce} \n")
-    
+    print(f"Hash \t  {hash_final}  \n")
+    print(f"Nonce  \t {bloque_ejemplo.nonce} \n")
