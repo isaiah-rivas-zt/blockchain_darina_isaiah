@@ -34,4 +34,3 @@ def minar_bloque(bloque, target, nonce_max):
             bloque.timestamp = time.time()
             bloque.nonce = 0
 
-    
